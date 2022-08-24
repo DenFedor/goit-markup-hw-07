@@ -1,0 +1,29 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	background: $main-background-color;
+	color: $default-text-color;
+	cursor: default;
+}
+.list {
+	list-style: none;
+}
+.link {
+	text-decoration: none;
+}
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.section {
+	display: flex;
+	justify-content: center;
+	padding: 94px 0;
+}
+img {
+	display: block;
+	max-width: 100%;
+}
