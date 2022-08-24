@@ -6,9 +6,12 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__item:hover {
+	&:hover {
 	cursor: pointer;
+}
+	&:focus-within {
+	border-color: #2196f3;
+}
 }
 .clients__link {
 	display: flex;
@@ -20,6 +23,9 @@
 	transition-property: border-color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover {
+	border-color: $icons-background-color-active;
+}
 }
 .clients__icon {
 	fill: $icons-main-color;
@@ -30,12 +36,7 @@
 .clients__item:hover .clients__icon {
 	fill: $icons-background-color-active;
 }
-.clients__link:hover {
-	border-color: $icons-background-color-active;
-}
+
 .clients__link:focus .clients__icon {
 	fill: $icons-background-color-active;
-}
-.clients__item:focus-within {
-	border-color: #2196f3;
 }

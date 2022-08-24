@@ -9,19 +9,10 @@
 	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.project-card:hover,
-.project-card:focus {
-	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project-card:hover .project-card__text {
-	transform: translateY(0%);
-}
-.project-card__wrap {
+	&__wrap {
 	position: relative;
-	overflow: hidden;
-}
-.project-card__text {
+	overflow: hidden;}
+	&__text {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -39,12 +30,11 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-card__description {
+&__description {
 	border: 1px solid #eeeeee;
 	text-align: left;
-	padding: 20px 24px;
-}
-.project-card__name{
+	padding: 20px 24px;}
+&__name{
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -52,9 +42,17 @@
 	margin-bottom: 4px;
 	color: $default-text-color;
 }
-.project-card__type {
+&__type {
 	font-size: 16px;
 	line-height: 188%;
 	letter-spacing: $standard-letter-spacing;
 	color: $small-text-color;
+}
+&:hover,
+&:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+}
+.project-card:hover .project-card__text {
+	transform: translateY(0%);
 }

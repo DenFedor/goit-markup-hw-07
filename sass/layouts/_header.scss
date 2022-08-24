@@ -2,11 +2,13 @@
 	border-bottom: 1px solid #ececec;
 	padding-top: 24px;
 	padding-bottom: 25px;
-}
-.header__container {
+
+	&__container {
 	display: flex;
 	align-items: center;
 }
+}
+
 .nav,
 .nav__link {
 	font-weight: 500;
@@ -17,59 +19,52 @@
 .nav {
 	display: flex;
 	column-gap: 50px;
-}
-
-.nav__link {
+	
+	&__link {
 	color: $default-text-color;
 	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.nav__item {
-	position: relative;
-}
-.nav__item--current::after {
-	display: flex;
-	position: absolute;
-	margin-top: 28px;
-	content: "";
-	width: 100%;
-	height: 4px;
-	background-color: #2196f3;
-	border-radius: 2px;
-}
 
+		&:hover,
+		&:focus {
+		color: $action-color;
+		cursor: pointer;
+}
+}
+	&__item {
+	position: relative;
+
+		&--current::after {
+		display: flex;
+		position: absolute;
+		margin-top: 28px;
+		content: "";
+		width: 100%;
+		height: 4px;
+		background-color: #2196f3;
+		border-radius: 2px;
+	}
+}
+}
 .nav__item--current .nav__link {
 	color: $action-color;
 }
-.nav__link:hover,
-.nav__link:focus {
-	color: $action-color;
-	cursor: pointer;
-}
+
 .header-contact {
 	display: inherit;
 	margin-left: auto;
 	gap: 30px;
 	align-items: center;
-}
-.header-contact__icon {
+	&__icon {
 	margin-right: 10px;
 	fill: currentColor;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-contact__email:hover .header-contact__icon,
-.header-contact__email:focus .header-contact__icon {
-	fill: $action-color;
-}
-.header-contact__tel:hover .header-contact__icon,
-.header-contact__tel:focus .header-contact__icon {
-	fill: $action-color;
-}
-.header-contact__email,
-.header-contact__tel {
+	&__email,
+	&__tel {
 	display: flex;
 	align-items: center;
 	font-weight: 500;
@@ -81,13 +76,18 @@
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header-contact__email:hover,
-.header-contact__email:focus {
+	&__email:hover,&__email:focus,
+	&__tel:hover,&__tel:focus{
 	color: $action-color;
 	cursor: pointer;
+}	
 }
-.header-contact__tel:hover,
-.header-contact__tel:focus {
-	color: $action-color;
-	cursor: pointer;
+
+.header-contact__email:hover .header-contact__icon,
+.header-contact__email:focus .header-contact__icon {
+	fill: $action-color;
+}
+.header-contact__tel:hover .header-contact__icon,
+.header-contact__tel:focus .header-contact__icon {
+	fill: $action-color;
 }

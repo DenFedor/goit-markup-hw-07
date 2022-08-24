@@ -1,22 +1,22 @@
 .logo {
-	font-family: "Raleway";
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.19;
-	letter-spacing: $standard-letter-spacing;
-}
-.logo--header {
+font-family: "Raleway";
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: $standard-letter-spacing;
+
+	&--header {
 	display: inherit;
 	color: #000000;
 	width: 145px;
 	margin-right: 93px;
 }
-.logo--footer {
+	&--footer {
 	display: inline-block;
 	color: $default-text-color-inverted;
 	margin-bottom: 20px;
 }
-
-.logo span {
+	& span {
 	color: $action-color;
+}
 }

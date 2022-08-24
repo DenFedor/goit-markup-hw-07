@@ -29,8 +29,8 @@
 	transition-property: transform;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal__title{
+
+	&__title{
 font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
@@ -38,6 +38,7 @@ text-align: center;
 letter-spacing: $standard-letter-spacing;
 color: $default-text-color;
 margin-bottom: 12px;
+	}
 }
 
 /* ----------------------FORM---------------------- */
@@ -63,9 +64,9 @@ outline: none;
 transition-property: border-color;
 transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.order-form__input:hover{
+	&:hover{
 	cursor: pointer;
+}
 }
 .order-form__input:focus,
 .order-form__comment-field:focus{
@@ -108,11 +109,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .policy{
 	margin-top: 10px;
 	margin-bottom: 30px;
-}
-.policy__input{
+
+&__input{
 	margin-right: 8px;
 }
-.policy_text{
+&__text{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -120,6 +121,11 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: $standard-letter-spacing;
 color: $small-text-color;
+}
+&__link{
+text-decoration-line: underline;
+color: $action-color;
+}
 }
 .checkbox{
 display: flex;
@@ -133,25 +139,23 @@ margin-right: 8px;
 transition-property: background-color, border;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.checkbox__icon{
+
+&__icon{
 	fill: transparent;
 }
-.policy__input:checked + .policy_text .checkbox{
+}
+
+.policy__input:checked + .policy__text .checkbox{
 	background-color: $icons-background-color-active;
 	border: $icons-background-color-active;
 	transition-property: background-color, border;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.policy__input:checked + .policy_text .checkbox__icon{
+.policy__input:checked + .policy__text .checkbox__icon{
 	fill: #fff;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.policy__link{
-text-decoration-line: underline;
-color: $action-color;
 }
 .button-wrap{
 	text-align: center;
@@ -168,15 +172,16 @@ transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 border-radius: 4px;
 border: none;
-}
-.sent-form-btn:hover{
+&:hover{
 cursor: pointer;
 }
-.sent-form-btn:hover, .sent-form-btn:focus{
+&:hover, &:focus{
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
 
 /* ----------------------CLOSE BUTTON---------------------- */
 .close-modal-btn {
@@ -191,10 +196,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	border-radius: 50%;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background: #ffffff;
-}
-.close-modal-btn:hover {
+	&:hover {
 	cursor: pointer;
 }
+}
+
 .close-modal-btn:hover .close-modal-btn__icon,
 .close-modal-btn:focus .close-modal-btn__icon{
 	fill: $icons-background-color-active;
