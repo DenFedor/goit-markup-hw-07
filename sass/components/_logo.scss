@@ -4,18 +4,6 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: $standard-letter-spacing;
-
-	&--header {
-	display: inherit;
-	color: #000000;
-	width: 145px;
-	margin-right: 93px;
-}
-	&--footer {
-	display: inline-block;
-	color: $default-text-color-inverted;
-	margin-bottom: 20px;
-}
 	& span {
 	color: $action-color;
 }

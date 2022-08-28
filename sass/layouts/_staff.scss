@@ -27,17 +27,7 @@
 &__soc-container {
 	padding-bottom: 30px;
 }
-}
-
-.social__link {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 44px;
-	width: 44px;
-	border-radius: 50%;
-
-	&--staff {
+	&__link {
 	background-color: $icons-background-color;
 	transition-property: background-color;
 	transition-duration: 250ms;
@@ -47,15 +37,14 @@
 	background-color: $icons-background-color-active;
 }
 }
-}
-.social__icon--staff {
+&__icon {
 	fill: $icons-main-color;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social_link--staff:hover .social__icon--staff,
-.social_link--staff:focus .social__icon--staff {
+}
+.staff__link:hover .staff__icon,
+.staff__link:focus .staff__icon {
 	fill: $icons-color-active;
 }

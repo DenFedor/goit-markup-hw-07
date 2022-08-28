@@ -2,6 +2,12 @@
 	background: #2f303a;
 	padding-top: 60px;
 	padding-bottom: 60px;
+	
+	&__logo {
+	display: inline-block;
+	color: $default-text-color-inverted;
+	margin-bottom: 20px;
+}
 
 	&.footer-contact-item {
 	margin-bottom: 9px;
@@ -64,23 +70,5 @@
 	color: $action-color;
 }
 
-.social {
-	display: flex;
-	justify-content: center;
-	column-gap: 10px;
-	&__icon--footer{
-	fill: #ffffff;
-}
-}
-.social--footer {
-	background-color: rgba(255, 255, 255, 0.1);
-	transition-property: background-color;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	&:hover,
-	&:focus {
-	background-color: $icons-background-color-active;
-}
-}
 
 

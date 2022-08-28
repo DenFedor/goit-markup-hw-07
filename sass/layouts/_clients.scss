@@ -1,7 +1,8 @@
-.clients__list {
+.clients{
+&__list {
 	justify-content: center;
 }
-.clients__item {
+&__item {
 	flex-basis: calc((100% - 150px) / 6);
 	transition-property: border-color;
 	transition-duration: 250ms;
@@ -13,7 +14,7 @@
 	border-color: #2196f3;
 }
 }
-.clients__link {
+&__link {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -27,11 +28,12 @@
 	border-color: $icons-background-color-active;
 }
 }
-.clients__icon {
+&__icon {
 	fill: $icons-main-color;
 	transition-property: fill;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 }
 .clients__item:hover .clients__icon {
 	fill: $icons-background-color-active;
